@@ -1,0 +1,396 @@
+body {
+  margin: 0;
+  padding: 0;
+  Font-size: 13px;
+}
+
+p {
+  margin: 0;
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .big-container {
+    height: auto;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 15px;
+  }
+
+}
+
+/* Desktop View */
+
+.big-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+
+}
+
+.small-container {
+  margin-bottom: 35px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 13.2vw 15vw 13.1vw 14vw;
+  height: 100%;
+  gap: 20px;
+  width: fit-content;
+
+}
+
+/* Daniel Clifford */
+
+.grid-item1 {
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  padding: 20px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: hsl(263, 55%, 52%);
+  border-radius: 10px;
+  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.quote-bg img{
+  position: absolute;
+  height: 75px;
+  width: 71px;
+  top: 0;
+  right: 83px;
+  opacity: 0.8;
+}
+
+.student1-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.student1-info .student-img {
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  border: 2px solid hsla(0, 0%, 81%, 50%);
+
+}
+
+.student1-info .student-details {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.student1-info .student-details .student-name {
+  color: hsl(0, 0%, 81%);
+  font-family: Barlow Semi Condensed;
+  font-weight: 600;
+  font-size: 12px;
+
+}
+
+.student1-info .student-details .student-level {
+  font-size: 10px;
+  font-family: Barlow Semi Condensed;
+  font-weight: 500;
+  color: hsla(0, 0%, 81%);
+  opacity: 50%;
+}
+
+.grid-item1 .speech-theme {
+  z-index: 100;
+  color: hsl(0, 0%, 100%);
+  font-family: Barlow Semi Condensed;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: expanded;
+  letter-spacing: 0.5px;
+  margin-bottom: 13px;
+}
+
+.grid-item1 .speech {
+  font-size: 10px;
+  font-family: Barlow Semi Condensed;
+  font-weight: 500;
+  color: hsla(0, 0%, 81%);
+  opacity: 70%;
+  margin-bottom: 5px;
+}
+
+/* Jonathan Walters */
+
+.grid-item2 {
+ display: flex;
+ flex-direction: column;
+ padding: 20px;
+ background-color: hsl(217, 19%, 35%);
+ border-radius: 10px;
+ box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.student2-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.student2-info .student-img {
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  border: 2px solid hsla(0, 0%, 81%, 50%);
+
+}
+
+.student2-info .student-details {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.student2-info .student-details .student-name {
+  color: hsl(0, 0%, 81%);
+  font-family: Barlow Semi Condensed;
+  font-weight: 600;
+  font-size: 12px;
+
+}
+
+.student2-info .student-details .student-level {
+  font-size: 10px;
+  font-family: Barlow Semi Condensed;
+  font-weight: 500;
+  color: hsla(0, 0%, 81%);
+  opacity: 50%;
+}
+
+.grid-item2 .speech-theme {
+  color: hsl(0, 0%, 100%);
+  font-family: Barlow Semi Condensed;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: expanded;
+  letter-spacing: 0.5px;
+  margin-bottom: 13px;
+}
+
+.grid-item2 .speech {
+  font-size: 10px;
+  font-family: Barlow Semi Condensed;
+  font-weight: 500;
+  color: hsla(0, 0%, 81%);
+  opacity: 70%;
+  margin-bottom: 5px;
+}
+
+/* Jeanette Harmon */
+
+.grid-item3 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.student3-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.student3-info .student-img {
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  border: 2px solid hsla(0, 0%, 81%, 50%);
+
+}
+
+.student3-info .student-details {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.student3-info .student-details .student-name {
+  color: hsl(217, 19%, 35%);
+  font-family: Barlow Semi Condensed;
+  font-weight: 600;
+  font-size: 12px;
+
+}
+
+.student3-info .student-details .student-level {
+  font-size: 10px;
+  font-family: Barlow Semi Condensed;
+  font-weight: 500;
+  color: hsl(217, 19%, 35%);
+  opacity: 50%;
+}
+
+.grid-item3 .speech-theme {
+  color: hsl(217, 19%, 35%);
+  font-family: Barlow Semi Condensed;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: expanded;
+  letter-spacing: 0.5px;
+  margin-bottom: 13px;
+}
+
+.grid-item3 .speech {
+  font-size: 10px;
+  font-family: Barlow Semi Condensed;
+  font-weight: 500;
+  color: hsl(217, 19%, 35%);
+  opacity: 70%;
+  margin-bottom: 5px;
+}
+
+/* Patrick Abrams */
+
+.grid-item4 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: hsl(219, 29%, 14%);
+  border-radius: 10px;
+  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.student4-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.student4-info .student-img {
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  border: 2px solid hsla(0, 0%, 81%, 50%);
+
+}
+
+.student4-info .student-details {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.student4-info .student-details .student-name {
+  color: hsl(0, 0%, 81%);
+  font-family: Barlow Semi Condensed;
+  font-weight: 600;
+  font-size: 12px;
+
+}
+
+.student4-info .student-details .student-level {
+  font-size: 10px;
+  font-family: Barlow Semi Condensed;
+  font-weight: 500;
+  color: hsla(0, 0%, 81%);
+  opacity: 50%;
+}
+
+.grid-item4 .speech-theme {
+  color: hsl(0, 0%, 100%);
+  font-family: Barlow Semi Condensed;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: expanded;
+  letter-spacing: 0.5px;
+  margin-bottom: 13px;
+}
+
+.grid-item4 .speech {
+  font-size: 10px;
+  font-family: Barlow Semi Condensed;
+  font-weight: 500;
+  color: hsla(0, 0%, 81%);
+  opacity: 70%;
+  margin-bottom: 5px;
+}
+
+/* Kira Whittle */
+
+.grid-item5 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 20px 20px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.student5-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.student5-info .student-img {
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  border: 2px solid hsla(0, 0%, 81%, 50%);
+
+}
+
+.student5-info .student-details {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.student5-info .student-details .student-name {
+  color: hsl(217, 19%, 35%);
+  font-family: Barlow Semi Condensed;
+  font-weight: 600;
+  font-size: 12px;
+
+}
+
+.student5-info .student-details .student-level {
+  font-size: 10px;
+  font-family: Barlow Semi Condensed;
+  font-weight: 500;
+  color: hsl(217, 19%, 35%);
+  opacity: 50%;
+}
+
+.grid-item5 .speech-theme {
+  color: hsl(217, 19%, 35%);
+  font-family: Barlow Semi Condensed;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: expanded;
+  letter-spacing: 0.5px;
+  margin-bottom: 13px;
+}
+
+.grid-item5 .speech {
+  font-size: 10px;
+  font-family: Barlow Semi Condensed;
+  font-weight: 500;
+  color: hsl(217, 19%, 35%);
+  opacity: 70%;
+  margin-bottom: 5px;
+  line-height: 13px;
+}
+
+
